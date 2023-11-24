@@ -80,3 +80,25 @@ for (let i = 2; i < 6; i++) {
 let links = document.querySelectorAll('a');
 console.log(links);
 console.log(links.innerHTML);
+
+// Написать скрипт, который находит картинки в блоке с классом main и первым 5 картинкам меняет url на указанное значение.
+let images = document.querySelectorAll('.main>img');
+let url = 'https://www.google.com';
+// for (let i = 0; i < 5; i++) {
+// 	images[i].setAttribute('src', url);
+// }
+
+let i = 0;
+for (img of images) {
+	i++;
+	if (i == 6) {
+		break;
+	}
+	img.setAttribute('src', url);
+}
+
+// Написать скрипт, который находит все ссылки на странице и формирует массив со всеми адресами. В итоге этот массив необходим о
+// вывести в консоль.
+
+let links = document.querySelectorAll('a');
+let linksArr = [];
