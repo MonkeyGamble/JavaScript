@@ -1,4 +1,14 @@
 {
     "toolchains": [],
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "plugins": [
+        {
+            "type": "add",
+            "pluginName": "fleet.intellij"
+        },
+        {
+            "type": "add",
+            "pluginName": "fleet.javascript"
+        }
+    ]
 }
