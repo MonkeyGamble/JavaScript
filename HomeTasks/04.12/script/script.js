@@ -1,22 +1,22 @@
-// Создайте новый элемент
-// , добавьте ему текст и добавьте его после элемента с id "existingElement".
+// // Создайте новый элемент
+// // , добавьте ему текст и добавьте его после элемента с id "existingElement".
 
-const newElem = document.createElement('h2');
-newElem.innerText = "I'm behind you!";
-const prevElem = document.querySelector('#existingElement');
-prevElem.insertAdjacentElement('afterend', newElem);
+// const newElem = document.createElement('h2');
+// newElem.innerText = "I'm behind you!";
+// const prevElem = document.querySelector('#existingElement');
+// prevElem.insertAdjacentElement('afterend', newElem);
 
-// Создайте новый элемент , добавьте ему текст и вставьте его внутрь элемента с id "parentElement".
+// // Создайте новый элемент , добавьте ему текст и вставьте его внутрь элемента с id "parentElement".
 
-const newElem2 = document.createElement('button');
-newElem2.innerText = 'Click Me!';
-const parent = document.querySelector('#parentElement');
-parent.append(newElem2); //parent.appendChild(newElem2);
+// const newElem2 = document.createElement('button');
+// newElem2.innerText = 'Click Me!';
+// const parent = document.querySelector('#parentElement');
+// parent.append(newElem2); //parent.appendChild(newElem2);
 
-// Удалите элемент с классом "removeMe".
+// // Удалите элемент с классом "removeMe".
 
-const newElem3 = document.querySelector('.removeMe');
-newElem3.remove();
+// const newElem3 = document.querySelector('.removeMe');
+// newElem3.remove();
 
 // Создать множество карточек с товарами (на основе массива с объектами. У объекта свойства title, unit_price, count);
 // Написать скрипт, который выводит карточки с товарами в интерфейс (на основе массива с объектами. У объекта свойства title, unit_price, count), а внизу выводится итоговая сумма товаров и их количество.
