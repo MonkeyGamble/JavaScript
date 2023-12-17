@@ -122,6 +122,65 @@ function checkRoot(string) {
 // d:y2
 // Assume that [a,b,c,d] and the answer are all integers (no floating numbers!). Slope: https://en.wikipedia.org/wiki/Slope
 
+
 function getSlope(array) {
-    
+    if (array[1] - array[0] === 0) return 'undefined'
+    let slope = (array[3] - array[2]) / (array[1] - array[0])
+    return slope.toString()
+}
+
+
+//9. You are given the length and width of a 4-sided polygon. The polygon can either be a rectangle or a square.
+// If it is a square, return its area. If it is a rectangle, return its perimeter.
+//
+// Example(Input1, Input2 --> Output):
+//
+// 6, 10 --> 32
+// 3, 3 --> 9
+// Note: for the purposes of this kata you will assume that it is a square if its length and width are equal, otherwise it is a rectangle.
+
+const areaOrPerimeter = function (l, w) {
+    return (l === w) ? l * w : 2 * l + 2 * w
+};
+
+//10. Your friend advised you to see a new performance in the most popular theater in the city.
+// He knows a lot about art and his advice is usually good, but not this time:
+// the performance turned out to be awfully dull. It's so bad you want to sneak out, which is quite simple,
+// especially since the exit is located right behind your row to the left.
+// All you need to do is climb over your seat and make your way to the exit.
+// The main problem is your shyness: you're afraid that you'll end up blocking the view
+// (even if only for a couple of seconds) of all the people who sit behind you and in your
+// column or the columns to your left. To gain some courage, you decide to calculate the number
+// of such people and see if you can possibly make it to the exit without disturbing too many people.
+// Given the total number of rows and columns in the theater (nRows and nCols, respectively),
+// and the row and column you're sitting in, return the number of people who sit strictly
+// behind you and in your column or to the left, assuming all seats are occupied.
+
+function seatsInTheater(nCols, nRows, col, row) {
+    return (nCols - (col - 1)) * (nRows - row)
+}
+
+//11.The first century spans from the year 1 up to and including the year 100, the second century
+// - from the year 101 up to and including the year 200, etc.
+// Task
+// Given a year, return the century it is in.
+
+function century(year) {
+    return (year % 100 === 0) ? year / 100 : Math.floor(year / 100) + 1
+}
+
+//12. Bob needs a fast way to calculate the volume of a cuboid with three values:
+// the length, width and height of the cuboid. Write a function to help Bob with this calculation.
+
+class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+        return length * width * height
+    }
+}
+
+//13. Return the Nth Even Number
+
+function nthEven(n) {
+    if (n === 0) return 'undefined'
+    return 2 * (n - 1)
 }
