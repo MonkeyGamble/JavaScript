@@ -99,7 +99,7 @@ function checkRoot(string) {
         return 'incorrect input'
     } else {
         for (let i = 0; i < numberArray.length - 1; i++) {
-            if (parseInt(numberArray[i]) + 1 != parseInt(numberArray[i + 1])) {
+            if (parseInt(numberArray[i]) + 1 !== parseInt(numberArray[i + 1])) {
                 return 'not consecutive'
             }
         }
