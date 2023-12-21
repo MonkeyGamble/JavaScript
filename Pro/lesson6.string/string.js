@@ -55,7 +55,8 @@
 let card = '4321 4567 8833 0000'
 
 function clearDataStr(str) {
-    console.log(str.replace(str.slice(0, 4), '****').replace(str.slice(-4), '****'))
+    // console.log(str.replace(str.slice(0, 4), '****').replace(str.slice(-7), '** ****'))
+    console.log(`**** ${str.slice(5, 12)}** ****`)
 }
 
-clearDataStr('4321 4567 8833 0000')
+clearDataStr(card)
